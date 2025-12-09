@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ai-chat-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: GEMINI_API_KEY
+        sync: false  # You will set the key manually in Render dashboard
+    disk:
+      name: chat-storage
+      mountPath: /opt/render/project/src/storage
+      sizeGB: 1

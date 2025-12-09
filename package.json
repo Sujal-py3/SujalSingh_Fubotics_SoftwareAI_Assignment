@@ -1,0 +1,25 @@
+{
+  "name": "ai-chat-app",
+  "version": "1.0.0",
+  "description": "Full-stack AI Chat App with saved history",
+  "scripts": {
+    "setup:env": "node setup-env.js",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "react",
+    "nodejs"
+  ],
+  "author": "Sujal Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@huggingface/inference": "^4.13.5",
+    "openai": "^6.10.0"
+  }
+}
